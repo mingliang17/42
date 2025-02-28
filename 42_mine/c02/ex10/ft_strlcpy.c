@@ -1,35 +1,44 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ming <ming@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/02/18 22:53:34 by ming              #+#    #+#             */
-/*   Updated: 2025/02/25 16:31:59 by ming             ###   ########.fr       */
+/*   Created: 2025/02/25 19:19:47 by ming              #+#    #+#             */
+/*   Updated: 2025/02/27 15:35:21 by ming             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_strlen(char *str)
+unsigned int	ft_strlcpy(char *dest, char *src, unsigned int size)
 {
 	int	count;
+	int	src_len;
 
 	count = 0;
-	while (*str)
+	src_len = 0;
+	while (count < size - 1)
 	{
+		dest[count] = src[count];
 		count++;
-		str++;
 	}
-	return (count);
+	dest[size] = '\0';
+	while (*src)
+	{
+		src_len++;
+		src++;
+	}
+	return (src_len);
 }
 
 // #include <stdio.h>
-// int main(void)
+// int	main(void)
 // {
-// 	char	*str;
-// 	int	length;
-// 	str = "asldkkdk";
-// 	length = ft_strlen(str);
-// 	printf("the length of string %s at address %p is %d",str, str,length);
+// 	char src[16] = "abcdefg545sgdga";
+// 	char dest[9] = "";
+// 	unsigned int size = 8;
+// 	printf("%s\n",src);
+// 	int answer = ft_strlcpy(dest, src, size);
+// 	printf("%s\n",dest);
+// 	printf("%d\n",answer);
 // }
-//the funciton must start with int instead of void to get return of int count

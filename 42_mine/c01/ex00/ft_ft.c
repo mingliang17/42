@@ -6,13 +6,13 @@
 /*   By: ming <ming@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/16 14:33:56 by ming              #+#    #+#             */
-/*   Updated: 2025/02/18 22:24:08 by ming             ###   ########.fr       */
+/*   Updated: 2025/02/25 16:19:31 by ming             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_ft(int *pointer)
+void	ft_ft(int *nbr)
 {
-	*pointer = 42;
+	*nbr = 42;
 }
 // #include <stdio.h>
 // int main(void)

@@ -6,7 +6,7 @@
 /*   By: ming <ming@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/17 16:16:16 by ming              #+#    #+#             */
-/*   Updated: 2025/02/18 22:27:02 by ming             ###   ########.fr       */
+/*   Updated: 2025/02/25 16:22:26 by ming             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,6 @@ void	ft_div_mod(int a, int b, int *div, int *mod)
 //     int     b;
 //     int     div;
 //     int     mod;
-
 // 	a = 30;
 // 	b = 4;	
 // 	ft_div_mod(a, b, &div, &mod);

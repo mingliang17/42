@@ -6,13 +6,13 @@
 /*   By: ming <ming@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/16 19:54:17 by ming              #+#    #+#             */
-/*   Updated: 2025/02/18 22:24:52 by ming             ###   ########.fr       */
+/*   Updated: 2025/02/25 16:20:18 by ming             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_ultimate_ft(int ***nbr)
+void	ft_ultimate_ft(int *********nbr)
 {
-	***nbr = 42;
+	*********nbr = 42;
 }
 // #include <stdio.h>
 // int main(void)
@@ -27,7 +27,6 @@ void	ft_ultimate_ft(int ***nbr)
 // 	int *******ptr7;
 // 	int ********ptr8;
 // 	int *********nbr;
-
 // 	ptr1 = &a;
 // 	ptr2 = &ptr1;
 // 	ptr3 = &ptr2;

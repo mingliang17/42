@@ -1,30 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr.c                                        :+:      :+:    :+:   */
+/*   ft_strlowcase.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ming <ming@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/02/18 22:22:37 by ming              #+#    #+#             */
-/*   Updated: 2025/02/25 16:30:27 by ming             ###   ########.fr       */
+/*   Created: 2025/02/25 17:05:14 by ming              #+#    #+#             */
+/*   Updated: 2025/02/25 17:16:11 by ming             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-
-void	ft_putstr(char *str)
+char	*ft_strlowcase(char *str)
 {
 	while (*str)
 	{
-		write(1, str, 1);
-		str ++;
+		if (*str >= 'A' && *str <= 'Z')
+		{
+			*str += 32;
+		}
+		str++;
 	}
+	return (str);
 }
+
 // #include <stdio.h>
-// int	main(void)
+// int main(void)
 // {
-// 	char	*pointer;
-// 	pointer = "asjahkg";
-// 	ft_putstr(pointer);
+// 	char str[8] = "Avk88vA";
+// 	ft_strlowcase(str);
+// 	printf("%s\n",str);
+// 	return (0);
 // }
-//the pointer moves up by 1
